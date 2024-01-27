@@ -2,15 +2,6 @@
 
 **Project description**
 
-This project is my setup for my Atreus keyboard. I try to update it as regularly as possible.
-
-The purpose of this keyboard layout is made for people who work in the IT world in order to optimize keyboard typing.
-
-It is specially made for users of:
-
-- The `vim` editor
-- Windows manager `i3`
-
 ## Contents
 
 1. [Installation](#installation)
@@ -20,22 +11,7 @@ It is specially made for users of:
 
 ## Installation
 
-To install it, nothing could be simpler, you simply have to make the script executable and launch it as below:
-
-```bash
-git clone https://github.com/TheHackdes/0x03---OptimoAtreus
-cd 0x03---OptimoAtreus
-chmod +x install.sh
-./install.sh
-```
-
 ## Use
-
-This script will simply copy the `frop` file to `/usr/share/X11/xkb/symbols/` which will allow you to change your keyboard layout with the following command
-
-```bash
-setxkbmap frop
-```
 
 ## Contribute
 
