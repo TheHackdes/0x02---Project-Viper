@@ -1,0 +1,6 @@
+---
+- name: Deploy Student Container
+  connection: local
+  hosts: all
+  roles:
+    - deploy_student_container

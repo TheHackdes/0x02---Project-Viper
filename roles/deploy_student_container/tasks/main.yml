@@ -1,0 +1,25 @@
+---
+
+# Variable STUDENT_USER    in roles/deploy_student_container/defaults/main.yml 
+
+- name: Create new student image
+  docker_image:
+    name: student_image
+    build:
+      path: ./roles/deploy_student_container/files/
+      dockerfile: Dockerfile
+    source: build
+    tag: latest
+
+- name: Create the student container
+  docker_container:
+    name: "stud_{{ item.name }}"
+    image: student_image
+    interactive: yes
+    state: started
+    restart_policy: always
+    command: "{{ item.name }} {{ item.pass }} /bin/bash"
+    ports:
+      - "22"
+  with_items: "{{ STUDENT_USER }}"
+

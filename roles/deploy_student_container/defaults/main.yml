@@ -1,0 +1,7 @@
+---
+# defaults file for deploy_student_container
+
+STUDENT_USER:
+  - { name: user1, pass: Pa$$w0rd1 }
+  - { name: user2, pass: Pa$$w0rd2 }
+  - { name: user3, pass: Pa$$w0rd3 }
