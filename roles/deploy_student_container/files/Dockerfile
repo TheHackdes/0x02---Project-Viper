@@ -1,7 +1,8 @@
 FROM debian
 
 RUN apt update -y
-RUN apt install openssh-server neovim vim openssl -y
+RUN apt install openssh-server neovim vim openssl tmux figlet python3-pip -y
+RUN pip install lolcat
 
 COPY ./create_user.sh /
 RUN chmod +x /create_user.sh

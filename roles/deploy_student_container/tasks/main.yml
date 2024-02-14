@@ -9,6 +9,8 @@
       path: ./roles/deploy_student_container/files/
       dockerfile: Dockerfile
     source: build
+    state: present
+    force_source: true
     tag: latest
 
 - name: Create the student container

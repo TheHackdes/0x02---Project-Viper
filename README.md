@@ -11,7 +11,31 @@
 
 ## Installation
 
+### Edit the student name
+
+Add or edit the file : 
+
+```bash
+vim roles/deploy_student_container/defaults/main.yml
+```
+
 ## Use
+
+```bash
+ansible-playbook -i hosts deploy_student_container.yml
+```
+
+Connect to docker student with the below command :
+
+```bash
+docker exec -ti <CONTAINER_NAME> bash
+```
+
+To view the student screen type : 
+
+```bash
+root@MACHINE:~$ shared
+```
 
 ## Contribute
 
